@@ -2,12 +2,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import "./styles/main.css";
 import { Layout } from "./components/Layout";
-import { Home } from "./pages/Home";
-import { Login } from "./pages/Login";
-import { ClassRoom } from "./pages/ClassRoom";
-import { Users } from "./pages/Users";
+import { Home } from "./pages/home/Home";
+import { Login } from "./pages/login/Login";
+import ClassRoom from "./pages/classRoom/ClassRoom";
+import { Users } from "./pages/users/Users";
 
-// Definindo rotas com Data Router
 const router = createBrowserRouter([
   { path: "/login", element: <Login /> },
   {

@@ -1,18 +1,19 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Header } from "./admin/Header";
-import { Sidebar } from "./admin/Sidebar";
-import { Footer } from "./admin/Footer";
+import { Header } from "./header/Header";
+import { Sidebar } from "./sidebar/Sidebar";
+import { Footer } from "./footer/Footer";
+import "../styles/main.css"; // Importe o CSS
 
 export const Layout: React.FC = () => {
   return (
-    <>
+    <div className="layout">
       <Header />
       <Sidebar />
-      <div className="content">
+      <main className="main">
         <Outlet />
-      </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };

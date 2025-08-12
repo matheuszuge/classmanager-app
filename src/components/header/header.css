@@ -1,0 +1,33 @@
+:root {
+    --primary-bg: #2d3748;
+    --secondary-bg: #4a5568;
+    --accent-color: #3498db;
+    --text-light: #f7fafc;
+    --text-muted: #cbd5e0;
+    --hover-effect: rgba(255, 255, 255, 0.1);
+    --shadow-effect: 0 8px 32px rgba(31, 38, 135, 0.37);
+    --border-radius: 12px;
+    --transition-speed: 0.3s;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    height: 60px;
+    background-color: var(--primary-bg);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 1000;
+    transition: left var(--transition-speed) ease;
+}
+
+.header h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/login.css";
+import "./loginForm.css";
 
 export const LoginForm = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ export const LoginForm = () => {
     }
     setError("");
     alert(`Login realizado para: ${email}`);
-    navigate("/admin");
+    navigate("/");
   };
 
   return (
